@@ -239,7 +239,7 @@
                 chatHistory.push({ role: "user", parts: [{ text: message }] });
 
                 const payload = { contents: chatHistory };
-                const apiKey = ""; // API key is intentionally left empty; Canvas runtime will provide it.
+                const apiKey = "AIzaSyCoejJ12rJYQCRvQ41BCEVaaE94OgdXz8c"; // API key is intentionally left empty; Canvas runtime will provide it.
                 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
                 const response = await fetch(apiUrl, {
